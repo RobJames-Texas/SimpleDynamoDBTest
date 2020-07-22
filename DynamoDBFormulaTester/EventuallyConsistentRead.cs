@@ -22,7 +22,7 @@ namespace DynamoDBFormulaTester
         public decimal Answer()
         {
             int roundedKb = (int)Math.Ceiling(KB / 4);
-            return roundedKb * ((decimal)NumberOfObjects / (decimal)2);
+            return roundedKb * (Math.Ceiling((decimal)NumberOfObjects / (decimal)2));
         }
     }
 }
