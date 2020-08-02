@@ -40,7 +40,7 @@ jobs:
         release_name: Release ${{ github.ref }}
         body: Automated Release by GitHub Action CD
         draft: true
-        prerelase: true
+        prerelease: true
     - name: Upload Release Asset (x64)
       uses: actions/upload-release-asset@v1
       env:
